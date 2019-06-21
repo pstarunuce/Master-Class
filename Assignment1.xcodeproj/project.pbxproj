@@ -14,6 +14,8 @@
 		DDB5B90B22BCE9C5008C9CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B90922BCE9C5008C9CB2 /* LaunchScreen.storyboard */; };
 		DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */; };
 		DDB5B91522BCFA34008C9CB2 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B91322BCFA34008C9CB2 /* ArticleTableViewCell.xib */; };
+		DDB5B91922BD0174008C9CB2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91822BD0174008C9CB2 /* Data.swift */; };
+		DDB5B91C22BD0323008C9CB2 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91B22BD0323008C9CB2 /* data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DDB5B90C22BCE9C5008C9CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		DDB5B91322BCFA34008C9CB2 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		DDB5B91822BD0174008C9CB2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DDB5B91B22BD0323008C9CB2 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		DDB5B8F422BCE9C4008C9CB2 = {
 			isa = PBXGroup;
 			children = (
+				DDB5B91A22BD030F008C9CB2 /* Data */,
+				DDB5B91722BD0151008C9CB2 /* Network */,
 				DDB5B8FF22BCE9C4008C9CB2 /* Assignment1 */,
 				DDB5B8FE22BCE9C4008C9CB2 /* Products */,
 			);
@@ -68,6 +74,22 @@
 				DDB5B90C22BCE9C5008C9CB2 /* Info.plist */,
 			);
 			path = Assignment1;
+			sourceTree = "<group>";
+		};
+		DDB5B91722BD0151008C9CB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DDB5B91822BD0174008C9CB2 /* Data.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DDB5B91A22BD030F008C9CB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DDB5B91B22BD0323008C9CB2 /* data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +167,8 @@
 				DDB5B90322BCE9C4008C9CB2 /* ViewController.swift in Sources */,
 				DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */,
 				DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */,
+				DDB5B91C22BD0323008C9CB2 /* data.swift in Sources */,
+				DDB5B91922BD0174008C9CB2 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
