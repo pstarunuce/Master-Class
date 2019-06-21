@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		442B5AD122BD069300DC8BF7 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442B5ACF22BD069300DC8BF7 /* DetailsViewController.xib */; };
-		442B5AD222BD069300DC8BF7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B5AD022BD069300DC8BF7 /* DetailsViewController.swift */; };
 		DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */; };
 		DDB5B90322BCE9C4008C9CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */; };
 		DDB5B90622BCE9C5008C9CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B90422BCE9C4008C9CB2 /* Main.storyboard */; };
@@ -16,11 +14,11 @@
 		DDB5B90B22BCE9C5008C9CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B90922BCE9C5008C9CB2 /* LaunchScreen.storyboard */; };
 		DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */; };
 		DDB5B91522BCFA34008C9CB2 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B91322BCFA34008C9CB2 /* ArticleTableViewCell.xib */; };
+		DDB5B91F22BD1129008C9CB2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */; };
+		DDB5B92022BD1129008C9CB2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		442B5ACF22BD069300DC8BF7 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		442B5AD022BD069300DC8BF7 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DDB5B8FD22BCE9C4008C9CB2 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +28,8 @@
 		DDB5B90C22BCE9C5008C9CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		DDB5B91322BCFA34008C9CB2 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +62,10 @@
 		DDB5B8FF22BCE9C4008C9CB2 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */,
+				DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */,
 				DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */,
 				DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */,
-				442B5AD022BD069300DC8BF7 /* DetailsViewController.swift */,
-				442B5ACF22BD069300DC8BF7 /* DetailsViewController.xib */,
 				DDB5B90422BCE9C4008C9CB2 /* Main.storyboard */,
 				DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */,
 				DDB5B91322BCFA34008C9CB2 /* ArticleTableViewCell.xib */,
@@ -136,7 +136,7 @@
 			files = (
 				DDB5B91522BCFA34008C9CB2 /* ArticleTableViewCell.xib in Resources */,
 				DDB5B90B22BCE9C5008C9CB2 /* LaunchScreen.storyboard in Resources */,
-				442B5AD122BD069300DC8BF7 /* DetailsViewController.xib in Resources */,
+				DDB5B92022BD1129008C9CB2 /* DetailsViewController.xib in Resources */,
 				DDB5B90822BCE9C5008C9CB2 /* Assets.xcassets in Resources */,
 				DDB5B90622BCE9C5008C9CB2 /* Main.storyboard in Resources */,
 			);
@@ -152,7 +152,7 @@
 				DDB5B90322BCE9C4008C9CB2 /* ViewController.swift in Sources */,
 				DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */,
 				DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */,
-				442B5AD222BD069300DC8BF7 /* DetailsViewController.swift in Sources */,
+				DDB5B91F22BD1129008C9CB2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
