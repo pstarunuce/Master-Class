@@ -14,9 +14,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
 
     @IBOutlet weak var Table: UITableView!
     @IBOutlet weak var SearchBar: UISearchBar!
+    
+    @IBOutlet weak var detailsButton: UIButton! {
+        didSet {
+            detailsButton.addTarget(self, action: #selector(didTapDetailsButton(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc
+    func didTapDetailsButton(_ button: UIButton) {
+        let article = Article(image: UIImage(), label: "T##String?", text: "T##String?")
+        let viewController = DetailsViewController(article: article)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
