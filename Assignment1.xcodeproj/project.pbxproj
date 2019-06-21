@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2C2A9D22BD138B00BB7C6E /* PostContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2C2A9B22BD138B00BB7C6E /* PostContentViewController.xib */; };
+		1F2C2A9E22BD138B00BB7C6E /* PostContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C2A9C22BD138B00BB7C6E /* PostContentViewController.swift */; };
 		DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */; };
 		DDB5B90322BCE9C4008C9CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */; };
 		DDB5B90622BCE9C5008C9CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B90422BCE9C4008C9CB2 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2C2A9B22BD138B00BB7C6E /* PostContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostContentViewController.xib; sourceTree = "<group>"; };
+		1F2C2A9C22BD138B00BB7C6E /* PostContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostContentViewController.swift; sourceTree = "<group>"; };
 		DDB5B8FD22BCE9C4008C9CB2 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */,
 				DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */,
 				DDB5B90022BCE9C4008C9CB2 /* AppDelegate.swift */,
+				1F2C2A9C22BD138B00BB7C6E /* PostContentViewController.swift */,
+				1F2C2A9B22BD138B00BB7C6E /* PostContentViewController.xib */,
 				DDB5B90222BCE9C4008C9CB2 /* ViewController.swift */,
 				DDB5B90422BCE9C4008C9CB2 /* Main.storyboard */,
 				DDB5B91222BCFA34008C9CB2 /* ArticleTableViewCell.swift */,
@@ -138,6 +144,7 @@
 				DDB5B90B22BCE9C5008C9CB2 /* LaunchScreen.storyboard in Resources */,
 				DDB5B92022BD1129008C9CB2 /* DetailsViewController.xib in Resources */,
 				DDB5B90822BCE9C5008C9CB2 /* Assets.xcassets in Resources */,
+				1F2C2A9D22BD138B00BB7C6E /* PostContentViewController.xib in Resources */,
 				DDB5B90622BCE9C5008C9CB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +159,7 @@
 				DDB5B90322BCE9C4008C9CB2 /* ViewController.swift in Sources */,
 				DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */,
 				DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */,
+				1F2C2A9E22BD138B00BB7C6E /* PostContentViewController.swift in Sources */,
 				DDB5B91F22BD1129008C9CB2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

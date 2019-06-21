@@ -25,6 +25,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var addButton: UIButton! {
+        didSet {
+            addButton.addTarget(self, action: #selector(didTapAddButton(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc
+    func didTapAddButton(_ button: UIButton) {
+        
+        let viewController = PostContentViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     @objc
     func didTapDetailsButton(_ button: UIButton) {
         let article = Article(image: UIImage(), label: "T##String?", text: "T##String?")

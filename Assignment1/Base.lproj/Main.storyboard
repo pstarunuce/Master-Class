@@ -46,6 +46,7 @@
                     <connections>
                         <outlet property="SearchBar" destination="vOG-9l-QdD" id="Ur2-aR-7NK"/>
                         <outlet property="Table" destination="vNc-7M-7FJ" id="ce5-S6-SiG"/>
+                        <outlet property="addButton" destination="JFG-sY-8A6" id="1hj-rE-g2U"/>
                         <outlet property="detailsButton" destination="7Fp-9P-oZ8" id="hNf-FS-EWN"/>
                     </connections>
                 </viewController>
