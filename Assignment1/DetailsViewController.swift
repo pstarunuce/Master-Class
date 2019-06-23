@@ -10,7 +10,7 @@ import UIKit
 
 struct Article {
     
-    var image: UIImage?
+    var imageUrl: String
     var label: String?
     var text: String?
     
@@ -20,7 +20,10 @@ struct Article {
 class DetailsViewController: UIViewController {
     
     private var article: Article
+    @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var content: UITextView!
+    @IBOutlet weak var imageHolder: UIImageView!
     init(article: Article) {
         self.article = article
         super.init(nibName: "DetailsViewController", bundle: nil)
@@ -32,7 +35,11 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      //  print(article.text)
+       // print (article.label)
+        content.text = article.text
+        label.text = article.label
+        imageHolder.downloaded(from: article.imageUrl)
         // Do any additional setup after loading the view.
     }
 
