@@ -9,19 +9,26 @@
 import Foundation
 
 struct APIClient {
-    static func fetchPhotos(text: String, completion: @escaping (_ success: Bool, _ photoResponse: PhotosResponse?) -> Void) {
-        let urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f2ddfcba0e5f88c2568d96dcccd09602&format=json&nojsoncallback=1&safe_search=1&per_page=10&text=\(text)"
-        
-        let url = URL(string: urlString)!
+    static func fetchPhotos(text: String, completion: @escaping (_ success: Bool, _ blogResponse: Blogs?) -> Void) {
+        //let urlString = "10.128.2.240?search=\(text)"
+        var urlString:String?
+        if((urlString) != nil){
+         urlString = "http://192.168.43.174:8080/blog/\(text)"
+        }
+        else{
+            urlString=
+        }
+            
+        guard let url = URL(string: urlString ?? <#default value#>) else { return  }
         
        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let responseData = data {
                 do {
                     let decoder = JSONDecoder()
-                    let result = try decoder.decode(PhotosResponse.self,
-                                                    from: responseData)
+                    let result = try decoder.decode(Blogs.self,from: responseData)
                     completion(true, result)
                 } catch {
+                    print("asdsadsa")
                     completion(false, nil)
                 }
             } else {

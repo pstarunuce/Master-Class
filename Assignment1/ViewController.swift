@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
-    private var photosResponse: PhotosResponse?
+    private var photosResponse: Blogs?
     @IBOutlet weak var SearchBar: UISearchBar!
     @objc func dismissKeyboard() {
         SearchBar.resignFirstResponder()
@@ -34,6 +34,15 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         SearchBar.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        APIClient.fetchPhotos(text: "hello") { (status, response) in
+            if status {
+                self.photosResponse = response
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    
+                }
+            }
+        }
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         dismissKeyboard()
@@ -56,18 +65,18 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.photosResponse?.photos?.photo?.count ?? 0
+        return self.photosResponse?.blogs.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as? ArticleTableViewCell
-        
-        if let photo = self.photosResponse?.photos?.photo?[indexPath.row] {
+     //   cell?.imageHolder.image = UIImage(named: "Phonepe.jpg")
+        if let photo = self.photosResponse?.blogs[indexPath.row] {
             
             cell?.label?.text = photo.title
             
-            cell?.summary?.text = photo.id
-            cell?.imageHolder?.downloaded(from:"https://tineye.com/images/widgets/mona.jpg")
+            cell?.summary?.text = photo.author
+            cell?.imageHolder?.downloaded(from: photo.imageUrl ?? "https://tineye.com/images/widgets/mona.jpg")
             
         }
         
@@ -92,13 +101,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
       //  print("hello")
        // print(indexPath)
 //        var _:String,_:String;
-        if let photo = self.photosResponse?.photos?.photo?[indexPath.row] {
+        if let photo = self.photosResponse?.blogs[indexPath.row] {
             //cell?.image1?.image = UIImage(named: "mona.jpg")
             //cell?.imageHolder?.downloaded(from:"https://tineye.com/images/widgets/mona.jpg")
             //cell?.title?.text = photo.title
             //cell?.subTitle?.text = photo.id
      //   print("byee")
-            let article = Article(imageUrl: "https://tineye.com/images/widgets/mona.jpg", label: photo.title, text: photo.id)
+            let article = Article(imageUrl: photo.imageUrl ?? "https://tineye.com/images/widgets/mona.jpg", label: photo.title, text: photo.content
+            )
             let viewController = DetailsViewController(article: article)
        //     print("hi")
             self.navigationController?.pushViewController(viewController, animated: true)
