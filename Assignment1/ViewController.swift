@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
     private var photosResponse: Blogs?
     @IBOutlet weak var SearchBar: UISearchBar!
