@@ -60,18 +60,32 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as? ArticleTableViewCell
+        
+        if let photo = self.photosResponse?.photos?.photo?[indexPath.row] {
+            
+            cell?.label?.text = photo.title
+            
+            cell?.summary?.text = photo.id
+            cell?.imageHolder?.downloaded(from:"https://tineye.com/images/widgets/mona.jpg")
+            
+        }
+        
+        
+        
+        return cell ?? UITableViewCell()
+     /*
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as? ArticleTableViewCell
         if (self.photosResponse?.photos?.photo?[indexPath.row]) != nil {
             //cell?.image1?.image = UIImage(named: "mona.jpg")
             cell?.imageHolder?.downloaded(from:"https://tineye.com/images/widgets/mona.jpg")
-            
-            //cell?.title?.text = photo.title
-            //cell?.subTitle?.text = photo.id
+            cell?.label?.text = photo.title
+            cell?.summary?.text = photo.id
             
         }
   
         return cell ?? UITableViewCell()
+ */
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

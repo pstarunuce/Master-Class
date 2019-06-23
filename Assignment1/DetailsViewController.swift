@@ -39,6 +39,8 @@ class DetailsViewController: UIViewController {
        // print (article.label)
         content.text = article.text
         label.text = article.label
+        imageHolder.autoresizingMask = UIView.AutoresizingMask(rawValue: UIView.AutoresizingMask.flexibleBottomMargin.rawValue | UIView.AutoresizingMask.flexibleHeight.rawValue | UIView.AutoresizingMask.flexibleRightMargin.rawValue | UIView.AutoresizingMask.flexibleLeftMargin.rawValue | UIView.AutoresizingMask.flexibleTopMargin.rawValue | UIView.AutoresizingMask.flexibleWidth.rawValue)
+            imageHolder.contentMode = UIView.ContentMode.scaleAspectFit
         imageHolder.downloaded(from: article.imageUrl)
         // Do any additional setup after loading the view.
     }

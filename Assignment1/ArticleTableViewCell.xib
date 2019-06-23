@@ -74,6 +74,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imageHolder" destination="MZo-pP-ubi" id="7wF-QJ-q4F"/>
+                <outlet property="label" destination="XzJ-zt-KVk" id="ryQ-F0-I8g"/>
+                <outlet property="summary" destination="glm-XW-FC0" id="jYj-YE-CCf"/>
             </connections>
             <point key="canvasLocation" x="121.0144927536232" y="61.941964285714285"/>
         </tableViewCell>
