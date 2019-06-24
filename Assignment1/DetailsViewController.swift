@@ -20,7 +20,11 @@ struct Article {
 class DetailsViewController: UIViewController {
     
     private var article: Article
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UILabel! {
+        didSet {
+            label.numberOfLines = 0 
+        }
+    }
     
     @IBOutlet weak var content: UITextView!
     @IBOutlet weak var imageHolder: UIImageView!

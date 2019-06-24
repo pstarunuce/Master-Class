@@ -19,8 +19,8 @@
 		DDB5B91F22BD1129008C9CB2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */; };
 		DDB5B92022BD1129008C9CB2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */; };
 		DDB5B9C722BE5248008C9CB2 /* ApiCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B9C622BE5248008C9CB2 /* ApiCilent.swift */; };
-		DDB5B9CA22BE5304008C9CB2 /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B9C922BE5304008C9CB2 /* PhotoResponse.swift */; };
 		DDB5B9CC22BFDC83008C9CB2 /* Blogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B9CB22BFDC83008C9CB2 /* Blogs.swift */; };
+		DDB5B9D022C0130B008C9CB2 /* ApiCilent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5B9CF22C0130B008C9CB2 /* ApiCilent1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		DDB5B91D22BD1129008C9CB2 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DDB5B91E22BD1129008C9CB2 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		DDB5B9C622BE5248008C9CB2 /* ApiCilent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCilent.swift; sourceTree = "<group>"; };
-		DDB5B9C922BE5304008C9CB2 /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
 		DDB5B9CB22BFDC83008C9CB2 /* Blogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blogs.swift; sourceTree = "<group>"; };
+		DDB5B9CF22C0130B008C9CB2 /* ApiCilent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCilent1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DDB5B9C622BE5248008C9CB2 /* ApiCilent.swift */,
+				DDB5B9CF22C0130B008C9CB2 /* ApiCilent1.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -101,7 +102,6 @@
 		DDB5B9C822BE52E4008C9CB2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				DDB5B9C922BE5304008C9CB2 /* PhotoResponse.swift */,
 				DDB5B9CB22BFDC83008C9CB2 /* Blogs.swift */,
 			);
 			path = Data;
@@ -187,7 +187,7 @@
 				DDB5B91422BCFA34008C9CB2 /* ArticleTableViewCell.swift in Sources */,
 				DDB5B90122BCE9C4008C9CB2 /* AppDelegate.swift in Sources */,
 				1F2C2A9E22BD138B00BB7C6E /* PostContentViewController.swift in Sources */,
-				DDB5B9CA22BE5304008C9CB2 /* PhotoResponse.swift in Sources */,
+				DDB5B9D022C0130B008C9CB2 /* ApiCilent1.swift in Sources */,
 				DDB5B91F22BD1129008C9CB2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

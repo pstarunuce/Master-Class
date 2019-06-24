@@ -12,14 +12,8 @@ struct APIClient {
     static func fetchPhotos(text: String, completion: @escaping (_ success: Bool, _ blogResponse: Blogs?) -> Void) {
         //let urlString = "10.128.2.240?search=\(text)"
         var urlString:String?
-        if((urlString) != nil){
-         urlString = "http://192.168.43.174:8080/blog/\(text)"
-        }
-        else{
-            urlString=
-        }
-            
-        guard let url = URL(string: urlString ?? <#default value#>) else { return  }
+         urlString = "http://172.17.60.138:9000/blog?search=\(text)"
+        guard let url = URL(string: urlString ?? "<#default value#>") else { return  }
         
        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let responseData = data {

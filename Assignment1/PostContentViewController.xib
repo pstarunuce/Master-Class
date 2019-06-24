@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostContentViewController" customModule="Assignment1" customModuleProvider="target">
             <connections>
+                <outlet property="contentImageView" destination="XRx-sE-Yfd" id="m67-AJ-ICb"/>
                 <outlet property="view" destination="fXb-xP-PXI" id="RQo-sC-O7S"/>
             </connections>
         </placeholder>
@@ -27,13 +28,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="528" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khg-Za-2fO">
-                                    <rect key="frame" x="8" y="8" width="45" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="8" width="45" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fS-zi-mWe">
-                                    <rect key="frame" x="80" y="0.0" width="440" height="36"/>
+                                    <rect key="frame" x="72" y="0.0" width="448" height="36"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -44,10 +45,10 @@
                                 <constraint firstItem="2fS-zi-mWe" firstAttribute="bottom" secondItem="67N-tS-gLB" secondAttribute="bottom" id="Ehq-Fs-p2Z"/>
                                 <constraint firstItem="Khg-Za-2fO" firstAttribute="centerY" secondItem="67N-tS-gLB" secondAttribute="centerY" id="TIf-Ps-VOS"/>
                                 <constraint firstItem="2fS-zi-mWe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Khg-Za-2fO" secondAttribute="trailing" constant="8" id="WS4-Or-O1R"/>
+                                <constraint firstItem="Khg-Za-2fO" firstAttribute="leading" secondItem="67N-tS-gLB" secondAttribute="leading" id="X8J-qg-He4"/>
                                 <constraint firstAttribute="height" constant="36" id="cPo-AG-cMn"/>
                                 <constraint firstItem="2fS-zi-mWe" firstAttribute="top" secondItem="67N-tS-gLB" secondAttribute="top" id="ik5-pa-Sbq"/>
                                 <constraint firstItem="67N-tS-gLB" firstAttribute="trailing" secondItem="2fS-zi-mWe" secondAttribute="trailing" constant="8" id="n7u-z4-gko"/>
-                                <constraint firstItem="Khg-Za-2fO" firstAttribute="leading" secondItem="67N-tS-gLB" secondAttribute="leading" constant="8" id="zy9-3K-hom"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="67N-tS-gLB"/>
                         </view>
@@ -55,13 +56,13 @@
                             <rect key="frame" x="0.0" y="52" width="528" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9S-6O-wpE">
-                                    <rect key="frame" x="8" y="8" width="64" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="8" width="64" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D6L-yy-wJx">
-                                    <rect key="frame" x="80" y="0.0" width="440" height="36"/>
+                                    <rect key="frame" x="72" y="0.0" width="448" height="36"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -73,7 +74,7 @@
                                 <constraint firstItem="D6L-yy-wJx" firstAttribute="leading" secondItem="K9S-6O-wpE" secondAttribute="trailing" constant="8" id="9Kg-NB-z3w"/>
                                 <constraint firstItem="D6L-yy-wJx" firstAttribute="top" secondItem="jYb-8B-wHM" secondAttribute="top" id="Gzp-nQ-uHT"/>
                                 <constraint firstItem="jYb-8B-wHM" firstAttribute="trailing" secondItem="D6L-yy-wJx" secondAttribute="trailing" constant="8" id="HhS-LM-MoS"/>
-                                <constraint firstItem="K9S-6O-wpE" firstAttribute="leading" secondItem="jYb-8B-wHM" secondAttribute="leading" constant="8" id="a42-59-bg5"/>
+                                <constraint firstItem="K9S-6O-wpE" firstAttribute="leading" secondItem="jYb-8B-wHM" secondAttribute="leading" id="JAb-4V-xAE"/>
                                 <constraint firstItem="K9S-6O-wpE" firstAttribute="centerY" secondItem="jYb-8B-wHM" secondAttribute="centerY" id="am8-FH-9yO"/>
                                 <constraint firstItem="jYb-8B-wHM" firstAttribute="bottom" secondItem="D6L-yy-wJx" secondAttribute="bottom" id="fM2-qu-BaI"/>
                             </constraints>
@@ -85,19 +86,25 @@
                             <color key="textColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia9-uB-FNZ">
-                            <rect key="frame" x="0.0" y="140.5" width="528" height="431.5"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia9-uB-FNZ">
+                            <rect key="frame" x="0.0" y="140.5" width="528" height="400"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="bMJ-Uu-dVT"/>
+                            </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-aD-kX1">
-                            <rect key="frame" x="0.0" y="588" width="528" height="30"/>
+                            <rect key="frame" x="0.0" y="556.5" width="528" height="61.5"/>
                             <color key="backgroundColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="tintColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <state key="normal" title="Add Image">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="imgButton:" destination="-1" eventType="touchUpInside" id="n02-js-o7S"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XRx-sE-Yfd">
                             <rect key="frame" x="0.0" y="634" width="528" height="128"/>

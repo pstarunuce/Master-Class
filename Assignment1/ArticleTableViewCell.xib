@@ -19,56 +19,50 @@
                 <rect key="frame" x="0.0" y="0.0" width="461" height="122.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-cm-ZPC">
-                        <rect key="frame" x="0.0" y="10" width="400" height="107.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-cm-ZPC">
+                        <rect key="frame" x="8" y="8" width="445" height="105.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZo-pP-ubi">
-                                <rect key="frame" x="0.0" y="4" width="190" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MZo-pP-ubi">
+                                <rect key="frame" x="0.0" y="11" width="150" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="T8y-oJ-hlb"/>
+                                    <constraint firstAttribute="width" constant="150" id="ix8-B2-Fna"/>
+                                </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZfY-5G-u9P">
-                                <rect key="frame" x="200" y="26" width="200" height="56"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZfY-5G-u9P">
+                                <rect key="frame" x="158" y="30.5" width="287" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XzJ-zt-KVk">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="fvW-2d-hJ5"/>
-                                            <constraint firstAttribute="height" constant="20" id="meZ-eV-yTm"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="287" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" smartDashesType="no"/>
                                     </textField>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glm-XW-FC0">
-                                        <rect key="frame" x="0.0" y="36" width="150" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="BKC-Wa-mUO"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.33775776860000001" green="0.092212313949999999" blue="0.69798413209999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="28" width="287" height="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="RVm-8k-B5h"/>
-                                </constraints>
                             </stackView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="ZfY-5G-u9P" firstAttribute="leading" secondItem="MZo-pP-ubi" secondAttribute="trailing" constant="10" id="bKE-1I-0kt"/>
-                            <constraint firstAttribute="width" constant="400" id="fMD-YF-WjP"/>
-                            <constraint firstItem="ZfY-5G-u9P" firstAttribute="leading" secondItem="MZo-pP-ubi" secondAttribute="trailing" constant="10" id="yAD-9H-N1z"/>
-                        </constraints>
                     </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-ku-oZw">
+                        <rect key="frame" x="0.0" y="121.5" width="461" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YdQ-ZA-lNL"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AEg-Vk-zt4"/>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B4n-9j-4XR"/>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="HhD-kF-nVH"/>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JEJ-eg-hbT"/>
-                    <constraint firstAttribute="bottom" secondItem="7Py-cm-ZPC" secondAttribute="bottom" constant="10" id="bGi-fI-s3v"/>
-                    <constraint firstAttribute="bottom" secondItem="7Py-cm-ZPC" secondAttribute="bottom" constant="5" id="chV-eK-uJG"/>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qvU-GT-B9g"/>
-                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="txB-wK-OuI"/>
+                    <constraint firstItem="ErG-ku-oZw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4J5-fH-dkY"/>
+                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FpG-ai-4j1"/>
+                    <constraint firstAttribute="bottom" secondItem="ErG-ku-oZw" secondAttribute="bottom" id="M3y-m9-Fol"/>
+                    <constraint firstAttribute="trailing" secondItem="7Py-cm-ZPC" secondAttribute="trailing" constant="8" id="aef-Pt-paX"/>
+                    <constraint firstItem="7Py-cm-ZPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ch9-ps-qUZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ErG-ku-oZw" secondAttribute="trailing" id="qQd-n2-1FF"/>
+                    <constraint firstItem="ErG-ku-oZw" firstAttribute="top" secondItem="7Py-cm-ZPC" secondAttribute="bottom" constant="8" id="wdr-bc-bsC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             tableView.delegate = self
             tableView.dataSource = self
             tableView.rowHeight = 100
+            tableView.separatorStyle = .none
             tableView.register(UINib(nibName: "ArticleTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
         }
         
@@ -33,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         SearchBar.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        APIClient.fetchPhotos(text: "hello") { (status, response) in
+        APIClient1.fetch(){ (status, response) in
             if status {
                 self.photosResponse = response
                 DispatchQueue.main.async {
@@ -73,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         if let photo = self.photosResponse?.blogs[indexPath.row] {
             
             cell?.label?.text = photo.title
-            
+            cell?.selectionStyle = .none
             cell?.summary?.text = photo.author
             cell?.imageHolder?.downloaded(from: photo.imageUrl ?? "https://tineye.com/images/widgets/mona.jpg")
             
@@ -95,6 +96,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return cell ?? UITableViewCell()
  */
     }
+    
+//    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       //  print("hello")
